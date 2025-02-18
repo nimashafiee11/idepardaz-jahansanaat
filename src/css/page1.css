@@ -32,6 +32,15 @@ body{
     border-radius: 0px 0px 20px 20px;
     box-shadow: 1px 0px 5px 4px blue;
 }
+#btn1 , #btn2{
+    transition: all 0.3s;
+}
+#btn1:hover{
+    transform: translateX(5px);
+}
+#btn2:hover{
+    transform: translateX(-5px);
+}
 
 
 
@@ -45,4 +54,26 @@ body{
         font-size: 14px ;
         font-weight: 20;
     }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #section1{
+        display: flex;
+        flex-direction: column; 
+    }
+    #section2{
+        display: flex;
+       
+        flex-direction: column-reverse; 
+    }
+     #text1{
+         width: 100%;
+         font-size: small;
+         padding-right: 4rem;
+     }
+     #text2{
+        font-size: small;
+        width: 100%;
+     }
 }
