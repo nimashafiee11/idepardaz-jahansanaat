@@ -13,7 +13,7 @@ function page() {
       </div>
       <div className="text-center p-3 shadow-md rounded-ee-xl rounded-es-xl shadow-blue-400  " >
           <h3 className="font-semibold p-4  text-xl   " >سوابق کاری</h3>
-          <span className="font-sans" >بیست سال سابقه کاری در فروش دستگاه های بستنی ساز و نصب و راه اندازی دستگاه بستنی ساز<br /> و تجهیز کافی شاپ و دیزاین کافی شاپ  فروش سردخانه ها و سیستم های تهویه مطبوع و تجهیزات نفت <br />و گاز و نصب و راه اندازی سردخانه و سیستم های تهویه</span>
+          <a className="font-sans" >بیست سال سابقه کاری در فروش دستگاه های بستنی ساز و نصب و راه اندازی دستگاه بستنی ساز<br /> و تجهیز کافی شاپ و دیزاین کافی شاپ  فروش سردخانه ها و سیستم های تهویه مطبوع و تجهیزات نفت <br />و گاز و نصب و راه اندازی سردخانه و سیستم های تهویه</a>
       </div>
       <div className="card-container font-sans ">
         <div className="card ">
@@ -30,7 +30,8 @@ function page() {
           </svg>
           <h2 className="font-semibold text-xl " >فروش دستگاه های بستنی ساز</h2>
           <p>ما به نایندگی از کارخانه ها و برند های معتبر بازای برای شما بهترین دستگاه های بستنی ساز را با بهترین قیمت ها فراهم میکنیم</p>
-          <span>ReadMore..</span>
+          <br />
+          <a  href="#"  className="bg-blue-200  p-1 rounded-md">مشاهده لیست محصوالات</a>
         </div>
         <div className="card">
           <svg
@@ -46,7 +47,8 @@ function page() {
           </svg>
           <h2 className="font-semibold text-xl " >فروش تجهیزات کافه</h2>
           <p>همچنین شما میتوانید تمامی تجهیزات کافه و رستوران های خود را به ما بسپارید و دستگاه های مورد نیاز خود را از ما خریداری نمایید</p>
-          <span>ReadMore..</span>
+          <br />
+          <a href="#" className="bg-blue-200  p-1 rounded-md">مشاهده لیست محصوالات</a>
         </div>
         <div className="card">
           <svg
@@ -62,7 +64,8 @@ function page() {
           </svg>
           <h2 className="font-semibold text-xl " >فروش نقد / شرایطی</h2>
           <p>یکی از نکات مثبت  در خرید از شرکت ایده پرداز جهان صنعت این میباشد که شما میتوانید دستگاه ها را هم به صورت نقدی و هم به صورت اقساط در چک های بلند مدت خریداری نمایید </p>
-          <span>ReadMore..</span>
+          <br />
+          <a href="#" className="bg-blue-200  p-1 rounded-md">مشاهده لیست محصوالات</a>
         </div>
         <div className="card">
           <svg
@@ -76,9 +79,10 @@ function page() {
             <path d="M7.519 5.057q.33-.527.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218" />
             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
           </svg>
-          <h2 className="font-semibold text-xl " >تضمین و ضمانت کیفیت</h2>
+          <h2 className="font-semibold text-xl " >تضمین  کیفیت کالا</h2>
           <p>دستگاه هابه دلیل اینکه مستقیم از کارخوانه برای شما ارسال میشوند ، پلم و آکبند بوده و تمامی دستگاه ها دارای گارانتی و خدمات میباشند</p>
-          <span>ReadMore..</span>
+          <br />
+          <a href="#" className="bg-blue-200  p-1 rounded-md">مشاهده لیست محصوالات</a>
         </div>
         <div className="card">
           <svg
@@ -94,7 +98,8 @@ function page() {
           </svg>
           <h2 className="font-semibold text-xl " >خرید به صورت حضوری و آنلاین </h2>
           <p>مشتریان میتوانند هم به صورت حضوری و هم به صورت انلاین ثبت سفارش کنند ، پیشنهاد داده میشود برای دوستانی که در شهر های نزدیک و حومه تهران ساکن هستند به صورت حضوری برای خرید دستگاه ها تشریف بیارند</p>
-          <span>ReadMore..</span>
+          <br />
+          <a href="#" className="bg-blue-200  p-1 rounded-md">مشاهده لیست محصوالات</a>
         </div>
         <div className="card">
           <svg
@@ -110,7 +115,8 @@ function page() {
           </svg>
           <h2 className="font-semibold text-xl " >ارسال به سراسر کشور</h2>
           <p>مشتریانی که ثبت سفارش را انجام داده و فاکتور را دریافت کردنند ، پس از دریافت فاکتور برای دریافت دستگاه میتوانند به صورت حضوری دستگاه را تحویل بگیرند و یا میتوانند  توسط بار بری محموله خود را دریافت کنند</p>
-          <span>ReadMore..</span>
+          <br />
+          <a href="#" className="bg-blue-200  p-1 rounded-md">مشاهده لیست محصوالات</a>
         </div>
         <div className="card">
           <svg
@@ -126,7 +132,8 @@ function page() {
           </svg>
           <h2 className="font-semibold text-xl " >نصب دستگاه ها </h2>
           <p>شما پس از خرید دستگاه میتوانید مراحل نصب و سرهم سازی دستگاه ها و اموزش نحوه استفاده از دستگاه ها را به ما بسپارید </p>
-          <span>ReadMore..</span>
+          <br />
+          <a href="#" className="bg-blue-200  p-1 rounded-md">مشاهده لیست محصوالات</a>
         </div>
         <div className="card">
           <svg
@@ -142,7 +149,8 @@ function page() {
           </svg>
           <h2 className="font-semibold text-xl " >خدمتات پس از فروش</h2>
           <p>اگر دستگاهی به مشکل خورد و یا قطعه ای از الان شکست و یا گم شد میتوانید آن قطعه را به صورت جداگانه با قیمت لیست کارخانه از ما خریداری نمایید</p>
-          <span>ReadMore..</span>
+          <br />
+          <a href="#" className="bg-blue-200  p-1 rounded-md" >مشاهده لیست محصوالات</a>
         </div>
       </div>
       <Footer />

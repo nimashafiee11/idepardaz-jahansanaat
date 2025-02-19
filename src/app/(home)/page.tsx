@@ -3,8 +3,9 @@ import "../../css/page1.css";
 import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import pic1 from "../../images/home.jpg";
-import pic2 from "../../images/importer-coffee-shop-equipment.jpg";
+import pic1 from "../../images/headerbody.jpg";
+import pic2 from "../../images/main1.jpeg";
+import pic3 from "../../images/main2.jpg";
 function page() {
   return (
     <React.Fragment>
@@ -13,7 +14,7 @@ function page() {
         <Image src={pic1} alt="" className="img  blur-sm brightness-50 " />
         <div className="text">
           {" "}
-          شرکت ایده برداز جهان صنعت <br />
+          شرکت ایده پرداز جهان صنعت <br />
           <p className="text-base">
             ما اینجا هستیم تا برای شما بهترین دستگاه ها را با بهترین شرایط فراهم
             کنیم !!!{" "}
@@ -24,7 +25,7 @@ function page() {
       <div className="flex  pt-32 flex-col gap-32 font-sans    " id="container">
         <div className=" flex justify-between items-center p-5 font-sans  " id="section1">
           <div className="text-end font-sans  w-3/6 text-md ps-10   " id="text1">
-            <h2 className="font-extrabold font-sans   pb-5 text-center ">خدمات ما</h2>
+            <h2 className="font-extrabold font-sans text-2xl   pb-5 text-center ">خدمات ما</h2>
 
             <div className="flex flex-col gap-4 " >
 
@@ -45,10 +46,10 @@ function page() {
           <br />
           <br />
           <Image
-            src={pic2}
+            src={pic3}
             alt="pic 2"
             width={500}
-            className="border rounded-2xl  pr-20  shadow-lg  shadow-black "
+            className="border rounded-2xl    shadow-lg  shadow-black "
           />
         </div>
         <div
@@ -59,12 +60,12 @@ function page() {
             src={pic2}
             alt="pic 3"
             width={500}
-            className="border rounded-2xl  pr-20  shadow-lg  shadow-black "
+            className="border rounded-2xl   shadow-lg  shadow-black "
           />
           <br />
           <br />
           <div className="text-end font-sans w-3/6 text-lg pr-14" id="text2">
-            <h2 className="font-extrabold pb-5 text-center  font-sans "> کمی درباره ما</h2>
+            <h2 className="font-extrabold pb-5 text-center text-2xl  font-sans "> کمی درباره ما</h2>
             <p>
             20 سال سابقه کاری در فروش دستگاه های بستنی ساز و نصب و راه اندازی  دستگاه بستنی ساز و تجهیز کافی شاپ و دیزاین کافی شاپ و فروش سردخانه ها و سیستم های تهویه مطبوع و تجهیزات نفت و گاز و نصب و راه اندازی سردخانه و سیستم های تهویه
             </p>
