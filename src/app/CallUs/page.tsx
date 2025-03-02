@@ -1,8 +1,32 @@
+'use client'
 import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+
 import '../../css/page4.css';
+
+
 function page() {
+    
+    const handleWhatsApp = ()=>{
+       window.open("https://wa.me/+989199314911")
+    }
+    const hanldeInsta = ()=>{
+          window.open("http://instagram.com/_u/jahan._sanaat/")
+    }
+    const handleTell = ()=>{
+        window.open("https://t.me/+989199314911")
+    }
+    const handleRubika =()=>{
+          window.open('https://rubika.ir/Sk15105')
+    }
+    const handlePhone = ()=>{
+         window.open('tel:+989933323563')
+    }
+    const handleEmail =()=>{
+      window.open('mailto:shafieenima0@gmail.com')
+    }
+      
   return (
     <React.Fragment>
       <Header />
@@ -11,7 +35,7 @@ function page() {
         <p>مشما مشتریان عزیز میتوانید از طریق راه های ارباطی درج شده در زیر با ما در ارتباط باشید . کافیست برای انتخابی هر پیامرسان روی آیکن آن کلیک کنید تا مستقیم وارد صفحه مورد نظر شوید</p>
       </div>
       <div className="" id="contacting"  >
-        <div className="card">
+        <div className="card" onClick={handleWhatsApp} >
           <svg
             className="w-[48px] h-[48px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -34,7 +58,7 @@ function page() {
           </svg>
           whatsApp
         </div>
-        <div className="card">
+        <div className="card" onClick={hanldeInsta} >
           <svg
             className="w-[48px] h-[48px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -53,7 +77,7 @@ function page() {
           </svg>
           instagram
         </div>
-        <div className="card">
+        <div className="card" onClick={handlePhone} >
           <svg
             className="w-[48px] h-[48px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -67,7 +91,7 @@ function page() {
           </svg>
           phoneNumber
         </div>
-        <div className="card">
+        <div className="card" onClick={handleEmail} >
           <svg
             className="w-[48px] h-[48px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -87,7 +111,7 @@ function page() {
           </svg>
           Email
         </div>
-        <div className="card">
+        <div className="card" onClick={handleRubika} >
           <svg
             className="w-[48px] h-[48px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -106,7 +130,7 @@ function page() {
           </svg>
           Rubika
         </div>
-        <div className="card">
+        <div className="card" onClick={handleTell} >
           <svg
             className="w-[48px] h-[48px] text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -130,9 +154,9 @@ function page() {
       <br />
       <hr className="shadow-md shadow-sky-300 border-y-blue-500 w-3/5 " id="hr"/>
       <br />
-      <hr  className="shadow-md shadow-sky-300 border-y-blue-400  w-4/5  "id="hr"  />
+      <hr  className="shadow-md shadow-sky-300 border-y-blue-400  w-4/5  "id="hr"/>
       <br />
-      <hr  className="shadow-md shadow-sky-300 border-y-blue-300  w-full " id="hr" />
+      <hr  className="shadow-md shadow-sky-300 border-y-blue-300  w-full " id="hr"/>
       <br />
    
       

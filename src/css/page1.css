@@ -6,8 +6,14 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+#header-flex{
+    display: flex;
+    flex-direction: column-reverse;
+}
 #headerbody{
+    border-radius: 15px 15px 5px 5px;
     position: relative;
+    overflow: hidden;
     width: 100%;
     overflow: hidden;
 }
@@ -28,8 +34,8 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
 }
-.header{
-    border-radius: 0px 0px 20px 20px;
+header{
+    border-radius: 0px 0px 35px 35px;
     box-shadow: 1px 0px 5px 4px blue;
 }
 #btn1 , #btn2{
@@ -40,6 +46,15 @@ body{
 }
 #btn2:hover{
     transform: translateX(-5px);
+}
+#h2-s2{
+    background-color: rgb(250, 249, 212) ;
+    color: blue;
+    transition: all 0.3s;
+}
+#h2-s2:hover{
+      background-color: blue;
+      color: rgb(250, 249, 212);
 }
 
 
@@ -67,13 +82,20 @@ body{
        
         flex-direction: column-reverse; 
     }
+    h2{
+        width: 100%;
+        text-align: end;
+    }
      #text1{
          width: 100%;
-         font-size: small;
+         font-size: 15px;
          padding-right: 4rem;
      }
      #text2{
-        font-size: small;
+        font-size: medium;
         width: 100%;
+     }
+     #h2-s2{
+        text-align: end;
      }
 }

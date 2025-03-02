@@ -1,45 +1,155 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import React from 'react'
-import '../css/page1.css'
 
-function header() {
+'use client'
+import '../css/header.css'
+import { useState } from 'react'
+import {
+  Dialog,
+  DialogPanel,
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Popover,
+  PopoverGroup,
+  PopoverPanel,
+} from '@headlessui/react'
+import {
+//   ArrowPathIcon,
+  Bars3Icon,
+//   ChartPieIcon,
+//   CursorArrowRaysIcon,
+//   FingerPrintIcon,
+//   SquaresPlusIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline'
+import { ChevronDownIcon} from '@heroicons/react/20/solid'
+
+
+
+export default function Example() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
-    <header className='' >
-    <nav className="bg-blue-700 text-yellow-100 border-gray-200 px-4 lg:px-6 header py-2.5 dark:bg-gray-800">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a href="#" className="flex items-center">
-                <img  src="https://flowbite.com/docs/images/logo.svg"  alt='photo' className="mr-3 h-6 sm:h-9"/>
-                <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">jahansanaat</span>
-            </a>
-            <div className="flex items-center lg:order-2">
-                <a href="#" className="text-yellow-100 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a>
-                <button data-collapse-toggle="mobile-menu-2" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
-                    <span className="sr-only">Open main menu</span>
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                    <svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
+    <header className="bg-blue-800 text-yellow-100 font-sans  " id='fixing' >
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        <div className="flex   lg:flex-1  " id='header-flex' >
+            <div className='flex flex-col  pt-1  ' >
+                <span className="">jahansanaat</span>
+                <span className="">شرکت ایده پرداز جهان صنعت</span>    
             </div>
-            <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                <ul className="flex flex-col mt-4 mr-14 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                    <li>
-                        <a href="/" className="block font-semibold py-2 pr-4 pl-3 text-yellow-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">خانه</a>
-                    </li>
-                    <li>
-                        <a href="/AboutUs" className="block font-semibold py-2 pr-4 pl-3 text-yellow-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">درباره ما</a>
-                    </li>
-                    <li>
-                        <a href="/Products" className="block font-semibold py-2 pr-4 pl-3 text-yellow-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">لیست محصولات</a>
-                    </li>
-                 
-                    <li>
-                        <a href="/CallUs" className="block font-semibold py-2 pr-4 pl-3 text-yellow-100 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">تماس با ما</a>
-                    </li>
-                </ul>
-            </div>
+           {/* <div> <img
+              alt=""
+              src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+              className="h-8 w-auto"
+            /></div> */}
+
         </div>
-    </nav>
-</header>
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-yellow-100"
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon aria-hidden="true" className="size-6" />
+          </button>
+        </div>
+        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+          <Popover className="relative">
+            
+             <a href="/CallUs" className='text-md' >تماس باما</a>
+              
+
+            <PopoverPanel
+              transition
+              className="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+            >
+             
+                
+            </PopoverPanel>
+          </Popover>
+
+          <a href="/Products" className="text-md/6  text-yellow-100">
+            لیست محصوالات
+          </a>
+          <a href="/AboutUs" className="text-md/6  text-yellow-100">
+            درباره ما
+          </a>
+          <a href="/" className="text-md/6  text-yellow-100">
+           خانه
+          </a>
+        </PopoverGroup>
+        <div className="hidden text-sm  lg:flex lg:flex-1 lg:justify-end">
+         تجیهزات کافی شاپ و رستوران
+        </div>
+      </nav>
+      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+        <div className="fixed inset-0 z-10" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-blue-800 text-yellow-100 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="flex items-center justify-between">
+            <a href="#" className="-m-1.5 p-1.5">
+              <div>
+              <span className="">jahansanaat</span>
+              <br />
+              <span className=''>شرکت ایده پرداز جهان صنعت</span>
+              </div>
+              {/* <img
+                alt=""
+                src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-8 w-auto"
+              /> */}
+            </a>
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(false)}
+              className="-m-2.5 rounded-md p-2.5 text-yellow-100"
+            >
+              <span className="sr-only">Close menu</span>
+              <XMarkIcon aria-hidden="true" className="size-6" />
+            </button>
+          </div>
+          <div className="mt-6 flow-root">
+            <div className="-my-6 divide-y divide-yellow-100-500/10">
+              <div className="space-y-2 py-6">
+                <Disclosure as="div" className="-mx-3">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-yellow-100 hover:bg-gray-50">
+                  <a href="/">خانه</a>
+                    <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
+                  </DisclosureButton>
+                  <DisclosurePanel className="mt-2 space-y-2">
+                  </DisclosurePanel>
+                </Disclosure>
+                <a
+                  href="/AboutUs"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-yellow-100 hover:bg-gray-50"
+                >
+                درباره ما
+                </a>
+                <a
+                  href="/Products"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-yellow-100 hover:bg-gray-50"
+                >
+                    لیست محصوالات
+                </a>
+                <a
+                  href="CallUs"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-yellow-100 hover:bg-gray-50"
+                >
+                 تماس باما
+                </a>
+              </div>
+              <div className="py-6">
+                <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-yellow-100 hover:bg-gray-50"
+                >
+             
+                </a>
+              </div>
+            </div>
+          </div>
+        </DialogPanel>
+      </Dialog>
+    </header>
   )
 }
-
-export default header

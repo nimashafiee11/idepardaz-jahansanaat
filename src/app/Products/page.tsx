@@ -13,20 +13,22 @@ function page() {
 
       <React.Fragment>
         <Header/> 
-        <div className='text-center font-bold   py-6 shadow-md shadow-gray-300 ' >
+        <div className='text-center font-bold  font-sans   py-6 shadow-md shadow-gray-300 ' >
           <h1  >ایده برداز جهان صنعت / فروشگاه </h1>
           <h2 className='' >لیست تمامی محصولات قرار گرفته در سایت  هر 24 سایت یکبار به روز رسانی میشوند </h2>
         </div>
-        <div  className='card-container font-sans '>
+        <div  className='card-container font-sans'>
          {products.map((product) => (
-            <div key={product.id} className='p-3 rounded-md ' >
-            <div className='card rounded-md  ' >
-               <Image src={product.image} width={400} height={200} alt='pic'  className=''  />
+            <div key={product.id} className='p-3 rounded-md text-center   ' >
+            <div className='card rounded-md text-center flex flex-col justify-center  ' >
+                <div className=''  id='products-pic'  > 
+                <Image src={product.image} width={400} height={200} alt='pic'  className='bg-cover rounded-md      pt-1 pb-3 '  />
+                </div>
                <h1 className='font-bold text-xl ' >{product.name}</h1>
-               <p id='uic' >{`${product.description.slice(0,40)}...`}</p>
+               <p id='uic' >{`${product.description}`}</p>
                <p>{product.price}</p> 
                <button className='  btn  bg-green-400 p-1 px-4 rounded-md my-2
-                border-y-red-900 ' >مشاهده لیست محصولات مربوط</button>
+                border-y-red-900 ' ><a target='_blank' href={product.images} >مشاهده لیست محصولات مربوط</a></button>
             </div>
             </div>
          ))}
