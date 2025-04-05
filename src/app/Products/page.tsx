@@ -13,22 +13,24 @@ function page() {
 
       <React.Fragment>
         <Header/> 
-        <div className='text-center font-bold  font-sans   py-6 shadow-md shadow-gray-300 ' >
+        <br />
+        <div className='text-center font-bold  font-sans  mt-20  py-6 shadow-md shadow-gray-300 ' >
           <h1  >ایده برداز جهان صنعت / فروشگاه </h1>
-          <h2 className='' >لیست تمامی محصولات قرار گرفته در سایت  هر 24 سایت یکبار به روز رسانی میشوند </h2>
+          <h2 className='text-center' >لیست تمامی محصولات قرار گرفته در سایت  هر 24 ساعت به روز رسانی میشوند </h2>
         </div>
         <div  className='card-container font-sans'>
-         {products.map((product) => (
+         {products.map((product) => ( 
             <div key={product.id} className='p-3 rounded-md text-center   ' >
-            <div className='card rounded-md text-center flex flex-col justify-center  ' >
+            <div className='card rounded-md text-center flex flex-col  justify-center' id='products-cards' >
                 <div className=''  id='products-pic'  > 
                 <Image src={product.image} width={400} height={200} alt='pic'  className='bg-cover rounded-md      pt-1 pb-3 '  />
                 </div>
                <h1 className='font-bold text-xl ' >{product.name}</h1>
                <p id='uic' >{`${product.description}`}</p>
                <p>{product.price}</p> 
-               <button className='  btn  bg-green-400 p-1 px-4 rounded-md my-2
+               <button className='  btn  bg-green-400 p-1 px-2 rounded-md my-2
                 border-y-red-900 ' ><a target='_blank' href={product.images} >مشاهده لیست محصولات مربوط</a></button>
+                <br />
             </div>
             </div>
          ))}

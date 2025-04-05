@@ -24,13 +24,15 @@
 #uic{
     direction: rtl;
 }
-/* #products-pic{
+#products-cards{
+    height: 29rem;
+}
+ /* #products-pic{
     position: relative;
     left: 1.75rem;
-}
-@media only screen and (max-width:768px){
-    #products-pic{
-        position: relative;
-        left: 15%;
-    }
 } */
+@media only screen and (max-width:768px){
+    #products-cards{
+        height: auto;
+    }
+} 

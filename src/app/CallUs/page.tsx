@@ -30,7 +30,9 @@ function page() {
   return (
     <React.Fragment>
       <Header />
-      <div className="font-serif  shadow-md rounded-ee-2xl rounded-es-2xl shadow-blue-400  " id="text">
+      <br />
+      <br />
+      <div className=" mt-14 font-serif  shadow-md rounded-ee-2xl rounded-es-2xl shadow-blue-400  " id="text">
         <h2>راه های ارتباطی با ما : </h2>
         <p>مشما مشتریان عزیز میتوانید از طریق راه های ارباطی درج شده در زیر با ما در ارتباط باشید . کافیست برای انتخابی هر پیامرسان روی آیکن آن کلیک کنید تا مستقیم وارد صفحه مورد نظر شوید</p>
       </div>

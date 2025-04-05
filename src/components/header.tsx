@@ -26,13 +26,13 @@ import { ChevronDownIcon} from '@heroicons/react/20/solid'
 
 
 
-export default function Example() {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-blue-800 text-yellow-100 font-sans  " id='fixing' >
+    <header className="bg-blue-800 text-yellow-100 font-sans absolute z-10 w-full  " id='fixing' >
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex   lg:flex-1  " id='header-flex' >
+        <div className="flex lg:flex-1  "  id='header-flex' >
             <div className='flex flex-col  pt-1  ' >
                 <span className="">jahansanaat</span>
                 <span className="">شرکت ایده پرداز جهان صنعت</span>    

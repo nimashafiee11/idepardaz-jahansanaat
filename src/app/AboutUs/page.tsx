@@ -9,7 +9,8 @@ function page() {
   return (
     <React.Fragment>
       <Header />
-      <div className=" bg-blue-200  shadow-xl flex justify-center items-center  shadow-blue-400  rounded-ee-xl rounded-lg rounded-es-xl text-xl font-serif "  >
+      <br />
+      <div className=" mt-4 bg-blue-200  shadow-xl flex justify-center items-center  shadow-blue-400  rounded-ee-xl rounded-lg rounded-es-xl text-xl font-serif "  >
         <h2 className="p-4 font-sans" ><a href="/">خانه</a> {"<"}  خدمات ما</h2>
       </div>
       <div className="text-center p-3 shadow-md rounded-ee-xl rounded-es-xl shadow-blue-400  " >
@@ -30,7 +31,7 @@ function page() {
             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
           </svg>
           <h2 className="font-semibold text-xl  " >فروش دستگاه های بستنی ساز</h2>
-          <p className="text-slate-700 py-2 " >ما به نایندگی از کارخانه ها و برند های معتبر بازای برای شما بهترین دستگاه های بستنی ساز را با بهترین قیمت ها فراهم میکنیم</p>
+          <p className="text-slate-700 py-2 " >ما به نایندگی از کارخانه ها و برند های معتبر بازار برای شما بهترین دستگاه های بستنی ساز را با بهترین قیمت ها فراهم میکنیم</p>
           <br />
           <a  href="/Products"  className="bg-blue-200  p-2 rounded-md">مشاهده لیست محصوالات</a>
         </div>
@@ -81,7 +82,7 @@ function page() {
             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
           </svg>
           <h2 className="font-semibold text-xl  " >تضمین  کیفیت کالا</h2>
-          <p className="text-slate-700 py-2 " >دستگاه هابه دلیل اینکه مستقیم از کارخوانه برای شما ارسال میشوند ، پلم و آکبند بوده و تمامی دستگاه ها دارای گارانتی و خدمات میباشند</p>
+          <p className="text-slate-700 py-2 " >دستگاه هابه دلیل اینکه مستقیم از کارخانه برای شما ارسال میشوند ، پلم و آکبند بوده و تمامی دستگاه ها دارای گارانتی و خدمات میباشند</p>
           <br />
           <a href="/Products" className="bg-blue-200  p-2 rounded-md">مشاهده لیست محصوالات</a>
         </div>
@@ -149,7 +150,7 @@ function page() {
             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
           </svg>
           <h2 className="font-semibold text-xl " >خدمتات پس از فروش</h2>
-          <p className="text-slate-700 py-2 "  >اگر دستگاهی به مشکل خورد و یا قطعه ای از الان شکست و یا گم شد میتوانید آن قطعه را به صورت جداگانه با قیمت لیست کارخانه از ما خریداری نمایید</p>
+          <p className="text-slate-700 py-2 "  >اگر دستگاهی به مشکل خورد و یا قطعه ای از آن شکست و یا گم شد میتوانید آن قطعه را به صورت جداگانه با قیمت لیست کارخانه از ما خریداری نمایید</p>
           <br />
           <a href="/Products" className="bg-blue-200  p-2 rounded-md" >مشاهده لیست محصوالات</a>
         </div>

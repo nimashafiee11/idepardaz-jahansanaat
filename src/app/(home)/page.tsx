@@ -10,7 +10,7 @@ function page() {
   return (
     <React.Fragment>
       <Header />
-      <div className="shadow-lg shadow-blue-600 " id="headerbody" >
+      <div className="shadow-lg pt-14 shadow-blue-600 " id="headerbody" >
         <Image src={pic1} alt="" className="img  blur-sm brightness-50 " />
         <div className="text">
           {" "}
@@ -35,7 +35,6 @@ function page() {
  موارد دیگر به صورت نقد واقساط که در
               ادامه سایت ذکر شده میتوانید با ما هم به صورت حضوری و هم به صورت
               تلفنی و یا پیام رسان های مختلف  درارتباط باشید
-              
             </p>
            <div className="flex justify-center gap-3  " >
            <button  id="btn1" className="bg-blue-700 p-2 rounded text-white" ><a href="/CallUs">تماس با ما</a></button>
@@ -66,7 +65,7 @@ function page() {
           <br />
           <div className="text-end font-sans w-3/6 text-lg pr-14" id="text2">
             <h2 className="font-extrabold border-t-2 border-blue-700  border-dotted rounded-2xl border-b-2 p-4 pb-5 text-center text-2xl  font-sans " id="h2-s2" > کمی درباره ما</h2>
-            <p className="pt-2" >
+            <p className="pt-2" id="" >
            بیش از 20  سال سابقه کاری در فروش دستگاه های بستنی ساز و نصب و راه اندازی  دستگاه بستنی ساز و تجهیز کافی شاپ و دیزاین کافی شاپ و فروش سردخانه ها و سیستم های تهویه مطبوع و تجهیزات نفت و گاز و نصب و راه اندازی سردخانه و سیستم های تهویه
             </p>
           </div>
