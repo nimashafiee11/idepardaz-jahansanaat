@@ -1,17 +1,18 @@
 import React from "react";
 import "../../css/page1.css";
-import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import pic1 from "../../images/headerbody.jpg";
-import pic2 from "../../images/main1.jpeg";
-import pic3 from "../../../public/home-first.jpg";
+// import Image from "next/image";
+// import pic1 from "../../images/headerbody.jpg";
+// import pic2 from "../../images/main1.jpeg";
+// import pic3 from "../../../public/home-first.jpg";
 function page() {
   return (
     <React.Fragment>
       <Header />
       <div className="shadow-lg pt-14 shadow-blue-600 " id="headerbody" >
-        <Image src={pic1} alt="" className="img  blur-sm brightness-50 " />
+        {/* <Image src={pic1} alt="" className="img  blur-sm brightness-50 " /> */}
+        <img src="images/headerbody.jpg" alt="headerbody-photo" className="img  blur-sm brightness-50 " />
         <div className="text">
           {" "}
           شرکت ایده پرداز جهان صنعت <br />
@@ -44,23 +45,30 @@ function page() {
           </div>
           <br />
           <br />
-          <Image
+          {/* <Image
             src={pic3}
             alt="pic 2"
             width={500}
             className=" rounded-2xl  h-96 overflow-hidden bg-cover    shadow-xl  shadow-blue-800 "
+          /> */}
+          <img src="images/home-first.jpg" alt="" 
+          id="img-1-2"
+           className=" rounded-2xl h-80 overflow-hidden bg-cover   shadow-xl  shadow-blue-800 "
           />
         </div>
         <div
           className="flex p-8 justify-between items-center pb-8 "
           id="section2"
         >
-          <Image
+          {/* <Image
             src={pic2}
             alt="pic 3"
             width={500}
             className=" rounded-2xl   shadow-xl  shadow-blue-800 "
-          />
+          /> */}
+          <img src="images/main1.jpeg" alt="" 
+          id="img-1-2"
+            className=" rounded-2xl   shadow-xl  shadow-blue-800" />
           <br />
           <br />
           <div className="text-end font-sans w-3/6 text-lg pr-14" id="text2">

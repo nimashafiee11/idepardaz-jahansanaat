@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React from "react";
 import Header from "@/components/header";
-// import Image from "next/image";
 import Footer from "@/components/footer";
 import "../../css/page1.css";
 import "../../css/page3.css";
