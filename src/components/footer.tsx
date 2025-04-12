@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React from 'react'
-
+import '../css/footer.css'
 function footer() {
   return (
     <React.Fragment>
@@ -60,15 +60,20 @@ function footer() {
         </div>
       </div>
     </div>
+    <div className='flex justify-around font-sans  ' id='karshenas-footer'  >
+           <h1 className='h1' > 📞  شماره تماس کارشناسان فروش  📞 </h1>
+           <p> خانم شفیعی : 09199314911</p>
+             <p>آقای کریمی : 09901635102</p>
+          </div>
     <hr className="my-6 border-blueGray-300"/>
     <div className="flex flex-wrap items-center md:justify-between justify-center">
       <div className="w-full md:w-4/12 px-4 mx-auto text-center">
         <div className="text-sm text-blueGray-500 font-semibold py-1">
-          Copyright © <span id="get-current-year">2021</span>
+          Copyright © <span id="get-current-year">2025  </span> 
           <a href="https://www.creative-tim.com/product/notus-js" className="text-blueGray-500 hover:text-gray-800" target="_blank">
-          Notus JS by
+           nima 
            </a>
-          <a href="https://www.creative-tim.com?ref=njs-profile" className="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
+          <a href="https://www.creative-tim.com?ref=njs-profile" className="text-blueGray-500 hover:text-blueGray-800"> shafiee</a>.
         </div>
       </div>
     </div>

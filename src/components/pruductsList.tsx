@@ -47,6 +47,30 @@ const products = [
     image : '/images/barseftkonnik2.jpeg' , 
     images : '/images/barseftkonee.jpeg'
   },
+  {
+    id :32 ,
+    name : 'کندانسورها' , 
+    price : '' , 
+    description : 'انواع کندانسور های پوسته/عمودی فریونی/افقی/vتایپ موجود میباشد' , 
+    image : '/images/sard1.jpeg' , 
+    images : ''
+  },
+  {
+    id : 33,
+    name : 'چیلرهای آب ' , 
+    price : '' , 
+    description : 'چیلرهای قدرتمند باکمپرسور های برند برای کاربردهای صنعتی و تجاری موجود میباشد' , 
+    image : '/images/sard2.jpeg'  , 
+    images : ''
+  },
+  {
+    id : 34,
+    name : 'فن کویل ها' , 
+    price : '' , 
+    description : '   فن کویل های زمینی/کانالی/سقفی/یک طرفه و چهار طرفه  با کمپرسور های مطرح موجود میباشد ' , 
+    image : '/images/sard3.jpeg'  , 
+    images : ''
+  },
   // { 
     
   //    id: 22,

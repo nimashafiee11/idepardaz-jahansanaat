@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ایده پرداز جهان صنعت",
   description: "شرکت ایده پرداز جهان صنعت",
+  // icons:{
+  //   icon : ''
+  // }
 };
 
 export default function RootLayout({

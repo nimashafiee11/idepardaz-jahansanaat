@@ -17,6 +17,7 @@ function page() {
         <div className='text-center font-bold  font-sans  mt-20  py-6 shadow-md shadow-gray-300 ' >
           <h1  >ایده برداز جهان صنعت / فروشگاه </h1>
           <h2 className='text-center' >لیست تمامی محصولات قرار گرفته در سایت  هر 24 ساعت به روز رسانی میشوند </h2>
+          <h3  >لیست محصولات  دستگاه های تجهیزات کافی شاپ و رستوران / تجهیزات سرمایشی و تهویه مطبوع صنعتی و تجاری</h3>
         </div>
         <div  className='card-container font-sans'>
          {products.map((product) => ( 
@@ -24,7 +25,7 @@ function page() {
             <div className='card rounded-md text-center flex flex-col  justify-center' id='products-cards' >
                 <div className=''  id='products-pic'  > 
                 {/* <Image src={product.image} width={400} height={200} alt='pic'  className='bg-cover rounded-md      pt-1 pb-3 '  /> */}
-                <img src={product.image} alt=""  className='bg-cover rounded-md pt-1 pb-3 '  />
+                <img src={product.image} alt=""  className='bg-cover rounded-md pt-5 pb-3 '  />
                 </div>
                <h1 className='font-bold text-xl ' >{product.name}</h1>
                <p id='uic' >{`${product.description}`}</p>
