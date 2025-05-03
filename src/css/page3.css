@@ -1,0 +1,37 @@
+
+.card-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+   gap: 20px;
+   padding: 30px;
+   direction: rtl;
+}
+.card{
+   box-shadow: 0px 6px 9px 2px rgba(13, 105, 190, 0.7);
+   padding: 20px;
+   text-align: center;
+   border-radius: 35px;
+   transition: all 0.3s;
+}
+.card:hover{
+    transform: scale(95%);
+    box-shadow: 0px 6px 9px rgba(6, 45, 82, 0.7);
+}
+@media only screen and (max-width:768px){
+   .card{
+      box-shadow: 0px 6px 9px 2px rgba(13, 105, 190, 0.7);
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      border-radius: 35px;
+      transition: all 0.3s;
+   }
+   h2{
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 2px;
+   }
+}

@@ -1,0 +1,9 @@
+#fixing{
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    z-index: 999;
+}
+ header{
+    border-radius:0px 0px 40px 40px ;
+ }
